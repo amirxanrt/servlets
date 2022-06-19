@@ -1,9 +1,12 @@
 package org.example.servlet;
 
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
 
 import java.io.IOException;
 
+
+@WebServlet("/hello")
 public class HelloServlet implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
