@@ -34,7 +34,7 @@ public class DispatcherServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final String path = req.getRequestURL().substring(
+        final String path = req.getRequestURI().substring(
                 req.getContextPath().length()
         );
 
